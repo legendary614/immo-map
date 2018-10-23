@@ -1,0 +1,175 @@
+@media (max-width: 767px) {
+  /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+  body {
+      padding-top: 50px;
+  }
+}
+/* Search sidebar */
+@media screen and (max-width: 991px) {
+  #side-overlay {
+    opacity: 1 !important;
+    left: 0 !important;
+    width: calc(100% - 100px);
+  }
+}
+body {
+  overflow-y: hidden;
+}
+
+/* Vuebar custom CSS */
+.vb-content {
+  height: calc(100vh - 20px) !important;
+}
+.vb > .vb-dragger {
+  z-index: 5;
+  width: 12px;
+  right: 0;
+}
+.vb > .vb-dragger > .vb-dragger-styler {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotate3d(0,0,0,0);
+  transform: rotate3d(0,0,0,0);
+  -webkit-transition:
+      background-color 100ms ease-out,
+      margin 100ms ease-out,
+      height 100ms ease-out;
+  transition:
+      background-color 100ms ease-out,
+      margin 100ms ease-out,
+      height 100ms ease-out;
+  background-color: rgba(196, 196, 196, .5);
+  margin: 5px 5px 5px 0;
+  border-radius: 20px;
+  height: calc(100% - 10px);
+  display: block;
+}
+.vb.vb-scrolling-phantom > .vb-dragger > .vb-dragger-styler {
+  background-color: rgb(199, 199, 199);
+}
+.vb > .vb-dragger:hover > .vb-dragger-styler {
+  background-color: rgb(199, 199, 199);
+  margin: 0px;
+  height: 100%;
+}
+.vb.vb-dragging > .vb-dragger > .vb-dragger-styler {
+  background-color: rgb(199, 199, 199);
+  margin: 0px;
+  height: 100%;
+}
+.vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
+  background-color: rgb(199, 199, 199);
+}
+
+/* Multiselect custom CSS */
+.multiselect__tag {
+  background: #5c90d2 !important;
+}
+.multiselect__tags {
+  padding: 8px 30px 0 8px !important;
+}
+.multiselect__tag-icon:focus,
+.multiselect__tag-icon:hover {
+  background: #5c90d2 !important;
+}
+.multiselect__tag-icon:after {
+  color: rgba(255,255,255,0.5) !important;
+}
+.multiselect__option--highlight:after {
+  background: #5c90d2 !important;
+}
+.multiselect__tag-icon:focus:after, .multiselect__tag-icon:hover:after {
+  color: #fff !important;
+}
+.multiselect__option--selected.multiselect__option--highlight {
+  background:  #5c90d2 !important;
+}
+.multiselect__option--highlight {
+  background: #5c90d2 !important;
+}
+.multiselect__option {
+  padding: 10px !important;
+  min-height: 20px !important;
+  line-height: 12px !important;
+}
+.multiselect__option:after {
+  min-height: 20px !important;
+  font-size: 10px !important;
+  line-height: 32px !important;
+}
+.multiselect, .multiselect__input, .multiselect__single, .multiselect--active {
+  font-size: 13px !important;
+  color: #696969 !important
+}
+.multiselect__spinner:after, .multiselect__spinner:before {
+  border-color: #70b9eb transparent transparent !important;
+}
+/* Datepicker custom CSS */
+.vdp-datepicker__calendar .cell.selected {
+  background-color: #5c90d2 !important;
+  border-color: #5c90d2 !important;
+  border-radius: 4px;
+  color: #fff !important;
+}
+.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover, .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover, .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover {
+  border: 1px solid #fff;
+  background: #eee;
+  border-radius: 4px;
+}
+
+.vdp-datepicker__calendar header span {
+  border-radius: 4px;
+}
+
+.leftside-datepicker.vdp-datepicker__calendar {
+  left: 0px;
+  top: 40px;
+  width: 280px !important;
+}
+.rightside-datepicker.vdp-datepicker__calendar {
+  right: 0px;
+  top: 40px;
+  width: 280px !important;
+}
+.icon_10{
+  background-image: url("/static/img/icons/10.png");
+}
+
+.icon_20{
+  background-image: url("/static/img/icons/20.png");
+}
+
+.icon_30{
+  background-image: url("/static/img/icons/30.png");
+}
+
+.icon_40{
+  background-image: url("/static/img/icons/40.png");
+}
+
+.icon_50{
+  background-image: url("/static/img/icons/50.png");
+}
+
+.icon_60{
+  background-image: url("/static/img/icons/60.png");
+}
+
+
+.icon_70{
+  background-image: url("/static/img/icons/70.png");
+}
+
+.fi{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  margin-right: 10px;
+  width: 20px;
+  display: block;
+  height: 20px;
+}
+
+.multiselect__tag{
+  margin-top: 20px;
+}
